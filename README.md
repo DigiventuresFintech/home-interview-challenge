@@ -64,6 +64,10 @@ Se debe completar el código faltante del `método get de ConfigurationControlle
 
 #### 👉 ¿Qué implica cada posible valor del modelo?
 
+Modelo real: https://github.com/DigiventuresFintech/home-interview-challenge/blob/main/models/inputs.json
+
+Algunos inputs de ejemplo:
+
 ```json
 {
   "path": {
