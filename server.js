@@ -7,8 +7,8 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 
 //Configuration requires
-const ConfigurationModel = require("./models/mock.json");
-const ConfigurationService = require("./Services/ConfigurationController");
+const ConfigurationModel = require("./models/inputs.json");
+const ConfigurationService = require("./services/ConfigurationService");
 const ConfigurationController = require("./controllers/ConfigurationController");
 
 //Configuration instances
