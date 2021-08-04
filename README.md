@@ -60,11 +60,90 @@ Se debe completar el código faltante del `método get de ConfigurationControlle
 - Crear modelo de configuración
 - Implementar búsqueda de configuración en MongoDB (buscar por nombre de página)
 
-#### ✍🏼 Authors
+#### 👉 ¿Qué implica cada posible valor del modelo?
+
+```json
+{
+  "path": {
+    //page path
+    "title": "", //título de la página
+    "inputs": [
+      {
+        "type": "text", //tipo de input o componente
+        "name": "username", //nombre del input en el evento
+        "label": "Username", //label del input
+        "regex": "^w{1,32}$", //regex de control
+        "required": true //necesario o no para el envío
+      },
+      {
+        "type": "link", //<a href="" />
+        "target": "https://digiventures.la/", //página de destino
+        "text": "¿Any problem? Contact us" //texto que debe ser presionado
+      },
+      {
+        "type": "confirm_password",
+        "name": "password",
+        "label": "Confirm your password",
+        "regex": "^(?=.*d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$",
+        "conditions": {
+          //incluye condiciones complejas
+          "validations": [{ "comparision": "same", "input": "password" }]
+          //array de validaciones de comparación para dar como válido el input
+          //comparision: algoritmo de comparación
+          //input: indica un input del cual tomar el valor de comparasión
+        }
+      },
+      {
+        "type": "select",
+        "name": "country",
+        "label": "¿Where are you living?",
+        "options": [
+          //opciones del select
+          { "value": "argentina", "label": "Argentina" },
+          { "value": "other", "label": "Other" }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "custom_country",
+        "label": "Specify which country",
+        "conditions": {
+          "validations": [
+            {
+              "comparision": "not_includes",
+              "input": "country",
+              "values": ["argentina"]
+            }
+            //not_includes: algoritmo de "no inclusión"
+            //values: array que contiene que valores no debe tener
+            //si escribe argentina debe dar error
+          ],
+          "render": [
+            [
+              {
+                "comparision": "includes", //includes: debe contener el valor
+                "input": "country", //input de selección de valor
+                "values": ["other"] //array: debe contener el valor other
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "type": "button",
+        "label": "Create account",
+        "method": "register" //debe invocar el método register
+      }
+    ]
+  }
+}
+```
+
+#### 💪 Authors
 
 - [@digiventures](https://github.com/DigiventuresFintech)
 - [@agustinquetto](https://www.github.com/agustinquetto) (puedes contactarme si tienes preguntas)
 
 ## Mock up demo
 
-![demo](https://github.com/DigiventuresFintech/home-interview-challenge/blob/9f12f0b4700a58f7ff25a58280a27a577acb3c5b/pages_example.jpg?raw=true)
+![demo]()
