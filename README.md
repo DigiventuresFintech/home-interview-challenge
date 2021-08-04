@@ -152,4 +152,4 @@ Algunos inputs de ejemplo:
 
 ## Mock up demo
 
-![demo]()
+![demo](https://github.com/DigiventuresFintech/home-interview-challenge/blob/9f12f0b4700a58f7ff25a58280a27a577acb3c5b/pages_example.jpg?raw=true)
