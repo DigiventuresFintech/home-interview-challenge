@@ -78,7 +78,7 @@ Se debe completar el código faltante del `método get de ConfigurationControlle
         "required": true //necesario o no para el envío
       },
       {
-        "type": "link", //<a href="" />
+        "type": "link", //<a href='' />
         "target": "https://digiventures.la/", //página de destino
         "text": "¿Any problem? Contact us" //texto que debe ser presionado
       },
@@ -116,14 +116,14 @@ Se debe completar el código faltante del `método get de ConfigurationControlle
               "input": "country",
               "values": ["argentina"]
             }
-            //not_includes: algoritmo de "no inclusión"
+            //not_includes: algoritmo de - no inclusión
             //values: array que contiene que valores no debe tener
             //si escribe argentina debe dar error
           ],
           "render": [
             [
               {
-                "comparision": "includes", //includes: debe contener el valor
+                "comparision": "includes", //includes - debe contener el valor
                 "input": "country", //input de selección de valor
                 "values": ["other"] //array: debe contener el valor other
               }
