@@ -5,7 +5,7 @@
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/DigiventuresFintech/home-interview-challenge.git
 ```
 
 Go to the project directory
