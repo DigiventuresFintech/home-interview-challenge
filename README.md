@@ -58,6 +58,11 @@ Como resultado se deberá tener una pantalla genérica donde según la URL se ca
 
 Se debe completar el código faltante del `método get de ConfigurationController - server.js (línea 28)` para retornar la configuración.
 
+#### Si eres o te postulas para Jr 👨‍💻
+
+Debes guiarte del json de configuración para crear los inputs y establecer sus propiedades, pero no debes realizarlos con autogeneración ni validaciones. Simplemente crea los formularios y envíalos al backend.
+
+
 #### 🏄 Objetivos adicionales
 
 - Integrar MongoDB
