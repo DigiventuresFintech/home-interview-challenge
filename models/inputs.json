@@ -19,8 +19,7 @@
       {
         "type": "checkbox",
         "name": "remember",
-        "label": "Remember me",
-        "required": true
+        "label": "Remember me"
       },
       {
         "type": "button",
