@@ -62,7 +62,7 @@
         "regex": "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
       },
       {
-        "type": "confirm_password",
+        "type": "password",
         "name": "password",
         "label": "Confirm your password",
         "regex": "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$",
