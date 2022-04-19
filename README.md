@@ -50,8 +50,6 @@ La emisión del estado contenedor de los valores de los inputs deberá hacerse c
 
 Ejemplo: si nos encontramos en `/login`, el `post` se debe hacer a `/login`
 
-Idealmente hacer uso del método `getInitialProps`: https://nextjs.org/docs/api-reference/data-fetching/getInitialProps
-
 Como resultado se deberá tener una pantalla genérica donde según la URL se cargue y se genere el contenido según la configuración, donde agregando la propiedad "recovery" a la configuración, al ingresar a "/recovery" deberíamos ver contenido nuevo sin realizar modificaciones en el FrontEnd.
 
 #### 🔧 Backend
