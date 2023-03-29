@@ -34,7 +34,7 @@ Deseamos crear páginas dinámicamente según un JSON de configuración consumid
 
 #### 🎨 Frontend
 
-Se debe utilizar la librería de componentes React Strap: https://reactstrap.github.io/components
+Se debe utilizar la librería de componentes React Strap: https://reactstrap.github.io/?path=/story/home-installation--page
 
 El comportamiento de las páginas será:
 
