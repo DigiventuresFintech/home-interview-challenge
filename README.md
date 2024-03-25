@@ -83,7 +83,7 @@ Algunos inputs de ejemplo:
         "type": "text", //tipo de input o componente
         "name": "username", //nombre del input en el evento
         "label": "Username", //label del input
-        "regex": "^w{1,32}$", //regex de control
+        "regex": "^\w{1,32}$", //regex de control
         "required": true //necesario o no para el envío
       },
       {
